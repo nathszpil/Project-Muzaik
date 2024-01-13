@@ -20,7 +20,7 @@ def pixelate(image_path, pixel_size):
 
 # Example usage
 input_image_path = "mario_pixels.jpg"
-pixel_size = 6
+pixel_size = 49
 
 result = pixelate(input_image_path, pixel_size)
 
