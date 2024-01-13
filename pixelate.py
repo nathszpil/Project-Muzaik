@@ -19,8 +19,8 @@ def pixelate(image_path, pixel_size):
 
 
 # Example usage
-input_image_path = "Mario.jpg"
-pixel_size = 14
+input_image_path = "mario_pixels.jpg"
+pixel_size = 6
 
 result = pixelate(input_image_path, pixel_size)
 
