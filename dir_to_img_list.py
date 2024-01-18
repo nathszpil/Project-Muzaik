@@ -40,13 +40,11 @@ def combine_images(image_list, output_directory, output_filename):
     combined_image.save(output_path)
 
 
-def order_images_by_brightness(pixel_brightnesses, brightnesses, covers):
+def order_images_by_brightness(pixel_brightnesses, brightnesses, images):
     ordered_images = []
-
     for pixel_brightness in pixel_brightnesses:
         record = float('inf')
         img_index = 0
-
         for i in range(len(brightnesses)):
             difference = abs(brightnesses[i] - pixel_brightness)
 
@@ -54,6 +52,5 @@ def order_images_by_brightness(pixel_brightnesses, brightnesses, covers):
                 record = difference
                 img_index = i
 
-        ordered_images.append(covers[img_index])
-
+        ordered_images.append(images[img_index])
     return ordered_images
